@@ -1,0 +1,37 @@
+{
+  "author": "zhangmingfeng",
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "deprecated": false,
+  "description": "egg axios plugin",
+  "eggPlugin": {
+    "name": "axios"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "app",
+    "config",
+    "agent.js",
+    "lib",
+    "app.js"
+  ],
+  "keywords": [
+    "egg",
+    "axios",
+    "egg-plugin",
+    "eggPlugin",
+    "http",
+    "https"
+  ],
+  "license": "MIT",
+  "name": "egg-axios",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangmingfeng/egg-axios.git"
+  },
+  "version": "1.0.0"
+}
