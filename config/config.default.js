@@ -1,10 +1,10 @@
 'use strict';
 
-exports.sequelize = {
-  dialect: 'mysql',
-  database: '',
-  host: 'localhost',
-  port: 3306,
-  username: 'root',
-  password: '',
+exports.http = {
+    headers: {
+        common: {
+            'Content-Type': 'application/json; charset=UTF-8'
+        }
+    },
+    timeout: 10000
 };
