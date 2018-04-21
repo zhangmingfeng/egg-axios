@@ -7,7 +7,7 @@
   "deprecated": false,
   "description": "egg axios plugin",
   "eggPlugin": {
-    "name": "axios"
+    "name": "http"
   },
   "engines": {
     "node": ">=6.0.0"
