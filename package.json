@@ -3,6 +3,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "axios": "^0.18.0",
+    "query-string": "^6.0.0",
     "webpack-merge": "^4.1.2"
   },
   "deprecated": false,
@@ -34,5 +35,5 @@
     "type": "git",
     "url": "git+https://github.com/zhangmingfeng/egg-axios.git"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
