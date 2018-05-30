@@ -36,8 +36,9 @@ exports.http = {
 ### example
 
 ```js
+// controller.js or service.js
 // with promise
-this.app.http.get('/user', {id: 123}).then((data)=>{
+this.ctx.http.get('/user', {id: 123}).then((data)=>{
     // data is only remote server response data
     console.log(data);
 }).catch((err)=>{
@@ -45,7 +46,7 @@ this.app.http.get('/user', {id: 123}).then((data)=>{
 });
 ```
 ```js
-this.app.http.post('/post', {postId: 123}).then((data)=>{
+this.ctx.http.post('/post', {postId: 123}).then((data)=>{
     // data is only remote server response data
     console.log(data);
 }).catch((err)=>{
@@ -55,7 +56,7 @@ this.app.http.post('/post', {postId: 123}).then((data)=>{
 ```js
 // with await/async
 try {
-    const data = await this.app.http.get('/user', {id: 123});
+    const data = await this.ctx.http.get('/user', {id: 123});
     console.log(data);
 } catch (e) {
     console.error(e)
@@ -63,7 +64,7 @@ try {
 ```
 ```js
 try {
-    const data = await this.app.http.post('/post', {postId: 123});
+    const data = await this.ctx.http.post('/post', {postId: 123});
     console.log(data);
 } catch (e) {
     console.error(e)
