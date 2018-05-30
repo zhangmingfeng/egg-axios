@@ -38,7 +38,13 @@ exports.http = {
 ```js
 // controller.js or service.js
 // with promise
-this.ctx.http.get('/user', {id: 123}).then((data)=>{
+this.ctx.http.get('/user', {id: 123}).then((data)=>{ // ==> /user?id=123
+    // data is only remote server response data
+    console.log(data);
+}).catch((err)=>{
+    console.error(err);
+});
+this.ctx.http.get('/user/:id', {id: 123}).then((data)=>{ // ==> /user/123
     // data is only remote server response data
     console.log(data);
 }).catch((err)=>{
