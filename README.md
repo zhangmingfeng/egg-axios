@@ -43,14 +43,16 @@ this.app.http.get('/user', {id: 123}).then((data)=>{
 }).catch((err)=>{
     console.error(err);
 });
-
+```
+```js
 this.app.http.post('/post, {postId: 123}).then((data)=>{
     // data is only remote server response data
     console.log(data);
 }).catch((err)=>{
     console.error(err);
 });
-
+```
+```js
 // with await/async
 try {
     const data = await this.app.http.get('/user', {id: 123});
@@ -58,13 +60,13 @@ try {
 } catch (e) {
     console.error(e)
 }
-
+```
+```js
 try {
     const data = await this.app.http.post('/post', {postId: 123});
     console.log(data);
 } catch (e) {
     console.error(e)
 }
-
 ```
 more example please visit https://github.com/axios/axios.
